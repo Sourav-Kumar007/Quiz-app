@@ -16,7 +16,7 @@ watch(search , () => {
       <h1> Quizes </h1> 
       <input v-model.trim="search" type="text" placeholder="Search...">
     </header>
-    <div class="optins-container">
+    <div class="options-container">
       <Card v-for="quiz in quizes"  :key="quiz.id" :quiz="quiz" />
     </div>
   </div>
@@ -53,5 +53,7 @@ watch(search , () => {
     margin-top: 40px;
     flex-direction:row;
   }
+
+
 
 </style>
